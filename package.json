@@ -1,0 +1,20 @@
+{
+  "name": "yandex_test",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "start:dev": "parcel src/index.html",
+    "build": "parcel build --no-source-maps --dist-dir=build --public-url=."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.12.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.12.0"
+  }
+}

@@ -1,0 +1,197 @@
+.header {
+	padding: 0 30px;
+	&-cell {
+		padding: 30px;
+	}
+	&-nav {
+		&-item {
+			white-space: nowrap;
+			& > a {
+				font-size: 16px;
+				margin-right: 40px;
+			}
+			&:last-child {
+				& > a {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	width: 100%;
+}
+
+.intro {
+	padding: 190px 0px 240px 0px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	border-collapse: separate;
+	& > tbody {
+		position: relative;
+		z-index: 2;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		background-image: url("../images/bg-main.png");
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		top: 0;
+		background-size: cover;
+		z-index: 0;
+	}
+	&-title {
+		display: block;
+		max-width: 605px;
+		white-space: initial;
+		margin-bottom: 20px;
+	}
+	&-content{
+		display: inline-block;
+	}
+}
+
+
+.advantages {
+	width: 100%;
+	padding-top: 100px;
+	margin-bottom: 30px;
+	&-table {
+		width: 100%;
+		table-layout: fixed;
+		border-collapse: separate;
+		& > tr {
+			border-spacing: 0;
+		}
+	}
+	&-title {
+		display: block;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	&-card {
+		display: block;
+		border-radius: 30px;
+		overflow: hidden;
+		position: relative;
+		padding: 30px;
+		padding-right: 20px;
+		height: 360px;
+		& > img {
+			position: absolute;
+			rotate: -15deg;
+		}
+		&__big {
+			& > h3 {
+				color: $color-white;
+				margin-bottom: 14px;
+			}
+			& > h5 {
+				color: $color-white;
+			}
+		}
+		&__small {
+			& > h4 {
+				color: $color-white;
+				margin-bottom: 10px;
+			}
+			& > h6 {
+				color: $color-white;
+			}
+		}
+		&#meaning {
+			background-color: #FF4D20;
+			& > img {
+				top: 0;
+				left: 33%;
+			}
+		}
+		&#improvement {
+			background-color: #73D47D;
+			& > img {
+				rotate: -10deg;
+				top: -7%;
+				left: 30%;
+				scale: 0.75;
+			}
+		}
+		&#reliability {
+			background-color: #35B2F9;
+			& > img {
+				top: 3%;
+				left: 0;
+				scale: 0.8;
+				rotate: -10deg;
+			}
+		}
+		&#care {
+			background-color: #F1D435;
+			& > img {
+				top: 0;
+				left: 0;
+				scale: 0.7;
+				rotate: 15deg;
+			}
+		}
+		&#environment {
+			background-color: #BF59C5;
+			& > img {
+				top: 0;
+				left: 0;
+				scale: 1;
+				rotate: 8deg;
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: $color-black;
+	width: 100%;
+	padding: 30px;
+	padding-bottom: 50px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	&-table {
+		width: 100%;
+		table-layout: fixed;
+		border-collapse: separate;
+	}
+	&-logo {
+		margin-bottom: 20px;
+	}
+	&-text {
+		color: $color-white;
+		&-cell {
+			vertical-align: top;
+		}
+	}
+	&-help {
+		&-text {
+			display: block;
+			margin-bottom: 6px;
+			color: $color-white;
+		}
+		&-tel {
+			display: block;
+			margin-bottom: 12px;
+			color: $color-white;
+		}
+		&-action {
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+	&-copyright {
+		color: $color-grey;
+	}
+	&-policy {
+		color: $color-grey;
+	}
+}

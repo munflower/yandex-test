@@ -1,0 +1,38 @@
+.spacing {
+	white-space: nowrap;
+	width: 100%;
+}
+
+.link {
+	font-weight: 400;
+	line-height: 1.4;
+	text-decoration: none;
+	&:hover {
+		transition: opacity ease-in 0.2s;
+		opacity: 0.7;
+	}
+}
+
+.button {
+	padding: 18px 26px;
+	background-color: $color-yellow;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		transition: opacity ease-in 0.2s;
+		opacity: 0.7;
+	}
+	&__small {
+		font-size: 16px;
+		padding: 10px 21px;
+		font-weight: 400;
+	}
+	&__black {
+		background-color: $color-black;
+		color: $color-white;
+	}
+}
